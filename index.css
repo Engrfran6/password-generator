@@ -1,0 +1,164 @@
+body{
+    background: #1C1C1C;
+}
+
+
+.hero{
+    position: absolute;
+    background: #1F2937;
+    width: 550px;
+    height: 800px;
+    left: 62px;
+    top: 64px;
+    border-radius: 20px;
+    border-bottom: 3px solid #4ADF86;
+}
+
+
+#header1{
+    position: absolute;
+    width: 354px;
+    height: 80px;
+    left: 52px;
+    top: 115px;
+    color: #FFFFFF;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+}
+
+#spanel {
+    color: #4ADF86
+}
+
+#header3{
+    position: absolute;
+    width: 372px;
+    height: 28px;
+    left: 52px;
+    top: 205px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+
+.button{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 200px;
+    height: 49px;
+    left: 52px;
+    top: 284px;
+
+    background: #10B981;
+    /* shadow/sm */
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-top: 25px;
+
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden; 
+
+}
+
+.result-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 52px;
+    top: 396px;
+    margin-top: 30px;
+
+}
+
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 2rem;
+    background: #273549;
+    border-radius: 6px;
+    margin: 0 20px;
+    margin-left: 0px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    word-break: break-all;
+    color: whitesmoke;
+}
+
+
+.btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: green;
+}
+
+
+.settings {
+    display: grid;
+    row-gap: 0.1rem;
+    align-items: center;
+    position: absolute;
+    left: 52px;
+    top: 510px;
+    margin-top: 30px;
+    color: #4ADF86;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+
+.form-el{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: #273549;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+label{
+    width: 245px;
+}
+
+/* adding ripple effect to button */
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

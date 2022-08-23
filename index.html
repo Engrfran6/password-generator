@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<div class="hero">
+    <div id="hero">
+        <h1 id="header1">Generate a <br><span id="spanel">random password</span></h1>
+        <h3 id="header3">Never use an insecure password again.</h3>
+
+        <!-- for generate button -->
+        <button class="button" id="generate">
+            Generate password
+        </button>
+    </div>
+    
+    <div class="result-container">
+        <div>
+            <span class="result" id='result'>password1</span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+
+        <div>
+            <span class="result" id="result2">password2</span>
+            <button class="btn" id="clipboard2">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+    </div>
+
+    <form action="submit" class="settings">
+        <div class="form-el">
+            <label for="">Numbers of Characters</label>
+            <input type="range" min="4" max="20" value="20" id='length' class="input-f"/>
+            <input type="number" min="4" max="20" value="20" id="length2" class="input-f"/>
+        </div>
+
+        <div class="form-el">
+            <label>Include lowercase</label> 
+            <input type="checkbox" id='lowercase' checked/ class="input-f">
+        </div>
+    
+        <div class="form-el">
+            <label>Include Uppercase</label> 
+            <input type="checkbox" id='uppercase' checked/ class="input-f">
+        </div>
+
+        <div class="form-el">
+            <label>Include Numbers</label> 
+            <input type="checkbox" id='numbers' checked/ class="input-f">
+        </div>
+
+        <div class="form-el">
+            <label>Include Symbols</label> 
+            <input type="checkbox" id='symbols' checked/ class="input-f">
+        </div>
+    </form>
+</div>
+
+
+
+   
+</body>
+</html>
