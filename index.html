@@ -23,47 +23,47 @@
     <div class="result-container">
         <div>
             <p class="result" id='result'>password1</p>
-            <button class="btn" id="clipboard">
+            <button class="btn_copy" id="clipboard">
                 <i class="far fa-clipboard"></i>copy
             </button>
         </div>
       
         <div>
             <p class="result" id="result2">password2</p>
-            <button class="btn" id="clipboard2">
+            <button class="btn_copy" id="clipboard2">
                 <i class="far fa-clipboard"></i>copy
             </button>
         </div>
      
     </div>
 
-    <form action="submit" class="settings">
-        <div class="form-el">
-            <label for="">Numbers of Characters</label>
+    <form class="form_container">
+        <div class="form_el">
+            <label>Numbers of Characters</label>
         <div>
             <input type="range" min="4" max="20" value="20" id='length' class="input-f"/>
             <input type="number" min="4" max="20" value="20" id="length2" class="input-f"/>
         </div>
         </div>
 
-        <div class="form-el">
+        <div class="form_el">
             <label>Include lowercase</label> 
-            <input type="checkbox" id='lowercase' checked/ class="input-f">
+            <input type="checkbox" id='lowercase' checked>
         </div>
     
-        <div class="form-el">
+        <div class="form_el">
             <label>Include Uppercase</label> 
-            <input type="checkbox" id='uppercase' checked/ class="input-f">
+            <input type="checkbox" id='uppercase' checked>
         </div>
 
-        <div class="form-el">
+        <div class="form_el">
             <label>Include Numbers</label> 
-            <input type="checkbox" id='numbers' checked/ class="input-f">
+            <input type="checkbox" id='numbers' checked>
         </div>
 
-        <div class="form-el">
+        <div class="form_el">
             <label>Include Symbols</label> 
-            <input type="checkbox" id='symbols' checked/ class="input-f">
+            <input type="checkbox" id='symbols' checked>
         </div>
     </form>
 </div>

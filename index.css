@@ -14,12 +14,14 @@ body{
 
 
 .hero{
-    width: 50%;
+    position: fixed;
+    left: calc(50% - 15%);
+    width: 30%;
     background: #1F2937;
     height: max-content;
     border-radius: 20px;
     border-bottom: 3px solid #4ADF86;
-    margin: 0 auto;
+    margin-top: 4rem;
 }
 
 
@@ -59,6 +61,7 @@ body{
     margin: 3rem 1rem ;
     padding: 1rem 1.5rem;
     transition: ease;
+    
 }
 
 /* adding ripple effect to button */
@@ -99,7 +102,7 @@ body{
 }
 
 
-.btn {
+.btn_copy {
 	color: #fff;
 	cursor: pointer;
 	padding: .4rem;
@@ -109,31 +112,58 @@ body{
 }
 
 
-.settings {
-    margin: 4rem .5rem;
-    color: #4ADF86;
-    font-size: 1.2rem;
+.form_container {
+    display: grid;
+    gap: .8rem;
+    margin: 4rem 1rem;
 }
 
 
-.form-el{
+.form_el{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     background: #273549;
-    padding: .2rem;
+    padding: .2rem 0 0.2rem 1rem;
     border-radius: .5rem;
+    color: #4ADF86;
+    font-size: 1.2rem;
 }
 
-.form-el >div{
+.form_el >div{
     display: flex;
+    justify-content: center;
     gap: .3rem;
     padding: 0.2rem;
-    margin-right: 4.5rem;
 }
 
-.form-el >div input{
+.form_el >div input{
     border-radius: .5rem;
     height: 2rem;
 }
 
+
+/* ====================MEDIA QUERY MD================= */
+
+@media screen and (max-width: 1024px){
+  .hero{
+    width: 50%;
+    position: fixed;
+    left: calc(50% - 25%);
+     margin-top: 0;
+  
+    }
+}
+
+/* ====================MEDIA QUERY SM================= */
+
+@media screen and (max-width: 600px){
+  .hero{
+    width: 100%;
+    position: fixed;
+    left: calc(50% - 50%);
+     margin-top: 0;
+
+  }
+
+}
