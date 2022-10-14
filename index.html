@@ -11,7 +11,6 @@
 <body>
 
 <div class="hero">
-    <div id="hero">
         <h1 id="header1">Generate a <br><span id="spanel">random password</span></h1>
         <h3 id="header3">Never use an insecure password again.</h3>
 
@@ -19,29 +18,32 @@
         <button class="button" id="generate">
             Generate password
         </button>
-    </div>
+
     
     <div class="result-container">
         <div>
-            <span class="result" id='result'>password1</span>
+            <p class="result" id='result'>password1</p>
             <button class="btn" id="clipboard">
                 <i class="far fa-clipboard"></i>copy
             </button>
         </div>
-
+      
         <div>
-            <span class="result" id="result2">password2</span>
+            <p class="result" id="result2">password2</p>
             <button class="btn" id="clipboard2">
                 <i class="far fa-clipboard"></i>copy
             </button>
         </div>
+     
     </div>
 
     <form action="submit" class="settings">
         <div class="form-el">
             <label for="">Numbers of Characters</label>
+        <div>
             <input type="range" min="4" max="20" value="20" id='length' class="input-f"/>
             <input type="number" min="4" max="20" value="20" id="length2" class="input-f"/>
+        </div>
         </div>
 
         <div class="form-el">
