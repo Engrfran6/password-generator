@@ -58,7 +58,7 @@ body{
     background: #10B981;
     border-radius: 1rem;
     cursor: pointer;
-    margin: 3rem 1rem ;
+    margin: 3rem 1rem;
     padding: 1rem 1.5rem;
     transition: ease;
     
@@ -84,9 +84,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
     text-align: center;
+    
 
 }
 
@@ -168,6 +169,12 @@ body{
 
   .hero{
     height: max-content;
+  }
+  .button{
+       margin: 1rem .5rem 0.5rem;
+  }
+  .form_container{
+    margin: 1rem .5rem 4rem;
   }
 
 }
